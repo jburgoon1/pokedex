@@ -1,7 +1,7 @@
 import React from 'react'
-import pokedex from './pokedex'
 
-const Pokecard = () =>{
+
+const Pokecard = ({pokedex}) =>{
     return pokedex.map(poke => {
      return (<div className="pokecard">
     <h3 className="pokecard-name">{poke.name}</h3>
